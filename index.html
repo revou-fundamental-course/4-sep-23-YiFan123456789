@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Calculator</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../Square Calculator/js/index.js"></script>
+    
+</head>
+<body>
+    <!--This one is for the head part of the page.-->
+    <div class="head"><h1>Square Calculator</h1></div>
+    <!--This one is where the main explanation part goes-->
+    <br/><br/><br/><br/><br/><br/>
+
+    <div class="explanation">
+        <table>
+            <tr>
+                <td class="left">
+                    <h3>Explanation : </h3>
+                    <h3>To calculate the area and perimeter of a square, the formulas are : </h3>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/003/685/385/small/photoframe-isolated-on-white-realistic-square-black-frame-mock-up-vector.jpg">
+                    <h4>Area = Side * Side</h4>
+                    <h4>Perimeter = 4 * Side</h4>
+                </td>
+                <td class="right">
+                    <form id="form">
+                        <h3>Side Length = </h3>
+                        <input type="number"id="sideLength"min="0"oninput="validity.valid||(value='');"accesskey="i">
+                        <h4><p id="result-area"></p></h4>
+                        <h4><p id="result-perimeter"></p></h4>
+                        <button type="button"onclick="CalculateNow()">Calculate</button>
+                        <button type="button"onclick="ResetNow()">Reset</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--This one is for the footer-->
+    <div class="foot">
+        <h4>This page is made for the purpose of calculating both the area and the perimeter of a square.</h4>
+        <h4>This page is also made to fulfill the requirement of the revorU assignment.</h4>
+    </div>
+</body>
+</html>
